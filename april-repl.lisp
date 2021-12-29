@@ -7,7 +7,12 @@
     (princ "> ")
     (finish-output)
     (let ((str (read-line)))
-      (if (string-equal str "exit")
-	(return))
-      (april:april-f str))
-    (terpri)))
+      (cond ((string-equal str ")exit") (return))
+	    ; load apl file when user inputs ')load'
+            ((string-equal str ")load")
+	     (progn
+	       (format t "load apl file: ")
+	       (finish-output)
+	       (eval '(april:april-load (pathname (read-line))))))
+            (t (april:april-f str))))
+  (terpri)))
