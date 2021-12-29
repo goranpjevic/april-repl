@@ -1,6 +1,23 @@
-                                   april repl
+				   april repl
 
 apl repl using the april library for common lisp.
+
+inputs are evaluated using the 'april-f' macro from the april library.  typing
+'exit' exits the repl.
+
+example usage:
+
+  > 1+1
+  2
+  > 5⊃1+⍳100
+  6
+  > (+/÷≢)⍳5
+  3
+  > a←10
+  
+  > a+1
+  11
+  >
 
 more information at:
 
