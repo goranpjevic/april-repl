@@ -8,5 +8,4 @@
     (let ((str (read-line)))
       (if (string-equal str "exit")
 	(return))
-      (april:april-f str))
-    (finish-output)))
+      (april:april-f str))))
