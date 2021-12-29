@@ -4,8 +4,10 @@
 
 (defun main (*posix-argv*)
   (loop
-    (format t "~%> ")
+    (princ "> ")
+    (finish-output)
     (let ((str (read-line)))
       (if (string-equal str "exit")
 	(return))
-      (april:april-f str))))
+      (april:april-f str))
+    (terpri)))
