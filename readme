@@ -2,8 +2,13 @@
 
 apl repl using the april library for common lisp.
 
-inputs are evaluated using the 'april-f' macro from the april library.  typing
-'exit' exits the repl.
+inputs are evaluated using the 'april-f' macro from the april library.
+
+system commands:
+
+  )load  - load an apl file
+
+  )exit  - exit repl
 
 example usage:
 
