@@ -17,7 +17,12 @@ example usage:
   
   > a+1
   11
-  > exit
+  > )load
+  load apl file: test.apl
+
+  > b
+  20
+  > )exit
 
 more information at:
 
