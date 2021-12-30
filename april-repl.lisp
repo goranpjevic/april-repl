@@ -12,9 +12,8 @@
             ((string-equal str ")exit") (return))
             ; load apl file when user inputs ')load'
             ((string-equal str ")load")
-             (progn
-               (princ "load apl file: ")
-               (finish-output)
-               (eval '(april:april-load (pathname (read-line))))))
+             (princ "load apl file: ")
+             (finish-output)
+             (eval '(april:april-load (pathname (read-line)))))
             (t (april:april-f str))))
     (terpri)))
