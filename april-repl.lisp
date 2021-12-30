@@ -8,6 +8,7 @@
     (finish-output)
     (let ((str (read-line)))
       (cond ((string-equal str ")exit") (return))
+	    ((string-equal str "") ())
 	    ; load apl file when user inputs ')load'
             ((string-equal str ")load")
 	     (progn
