@@ -15,5 +15,5 @@
              (princ "load apl file: ")
              (finish-output)
              (eval '(april:april-load (pathname (read-line)))))
-            (t (april:april-f str))))
-    (terpri)))
+            (t (april:april-f str)
+               (fresh-line))))))

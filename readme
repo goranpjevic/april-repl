@@ -24,7 +24,6 @@ example usage:
   11
   > )load
   load apl file: test.apl
-
   > b
   20
   > )exit
