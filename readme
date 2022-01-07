@@ -1,14 +1,13 @@
 				   april repl
 
-apl repl using the april library for common lisp.
-
-inputs are evaluated using the 'april-f' macro from the april library.
+apl repl using the april library (https://github.com/phantomics/april) for
+common lisp.
 
 installation:
 
-  install roswell (https://roswell.github.io)
+  1. install roswell (https://roswell.github.io)
 
-  run the command:
+  2. run the command:
 
     ros install goranpjevic/april-repl
 
@@ -35,7 +34,3 @@ example usage:
   > b
   20
   > )exit
-
-more information at:
-
-  https://github.com/phantomics/april
