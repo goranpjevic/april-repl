@@ -7,7 +7,9 @@ installation:
 
   1. install roswell (https://roswell.github.io)
 
-  2. run the command:
+  2. add the '~/.roswell/bin' directory to the $PATH variable
+
+  3. run the command:
 
     ros install goranpjevic/april-repl
 
