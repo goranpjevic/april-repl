@@ -3,7 +3,6 @@
 (in-package #:april-repl)
 
 (defun main ()
-  (declare (ignorable argv))
   (loop
     (princ "> ")
     (finish-output)
